@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PublicSans-Bold.ttf">
+            <string>PublicSans-Bold</string>
+        </array>
+        <array key="PublicSans-Regular.ttf">
+            <string>PublicSans-Regular</string>
+        </array>
+        <array key="WorkSans-SemiBold.ttf">
+            <string>WorkSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterRequestView" customModule="Nerd" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="3ga-6j-VQI" id="eyq-Fz-eak"/>
+                <outlet property="signupButton" destination="uql-J5-YPR" id="OTn-FV-bFS"/>
+                <outlet property="view" destination="e4q-yi-e3F" id="4Q6-jI-P2z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="e4q-yi-e3F">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="256"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rY-aL-Qy6">
+                    <rect key="frame" x="20" y="64" width="188.5" height="29.5"/>
+                    <fontDescription key="fontDescription" name="PublicSans-Bold" family="Public Sans" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C5U-3o-V2C">
+                    <rect key="frame" x="63.5" y="181" width="287.5" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ga-6j-VQI">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="125" id="DSY-NF-xix"/>
+                                <constraint firstAttribute="height" constant="50" id="d6d-X0-pwo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="WorkSans-SemiBold" family="Work Sans" pointSize="20"/>
+                            <state key="normal" title="Login">
+                                <color key="titleColor" name="TextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="Xes-hy-vEZ"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZ2-FJ-hAn">
+                            <rect key="frame" x="135" y="0.0" width="17.5" height="50"/>
+                            <fontDescription key="fontDescription" name="PublicSans-Regular" family="Public Sans" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uql-J5-YPR">
+                            <rect key="frame" x="162.5" y="0.0" width="125" height="50"/>
+                            <color key="backgroundColor" name="Accent1"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="125" id="8Rx-9Q-gbv"/>
+                                <constraint firstAttribute="height" constant="50" id="oxC-fO-HtI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="WorkSans-SemiBold" family="Work Sans" pointSize="20"/>
+                            <state key="normal" title="Sign Up">
+                                <color key="titleColor" name="TextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="signupAction:" destination="-1" eventType="touchUpInside" id="d1A-ix-Lvz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or Sign Up to take advantage of all the features nerd has!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sys-nD-w1J">
+                    <rect key="frame" x="20" y="114" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17.5" id="ki9-CP-hdj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PublicSans-Regular" family="Public Sans" pointSize="17"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="7pa-lu-fcG"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4rY-aL-Qy6" firstAttribute="leading" secondItem="7pa-lu-fcG" secondAttribute="leading" constant="20" id="4qo-sN-tec"/>
+                <constraint firstItem="Sys-nD-w1J" firstAttribute="top" secondItem="4rY-aL-Qy6" secondAttribute="bottom" constant="20.5" id="8k9-Ow-HC4"/>
+                <constraint firstAttribute="trailing" secondItem="Sys-nD-w1J" secondAttribute="trailing" constant="20" id="EWe-5Y-Xpm"/>
+                <constraint firstItem="C5U-3o-V2C" firstAttribute="centerX" secondItem="e4q-yi-e3F" secondAttribute="centerX" id="WQV-nv-7tP"/>
+                <constraint firstItem="C5U-3o-V2C" firstAttribute="top" secondItem="Sys-nD-w1J" secondAttribute="bottom" constant="27" id="kLQ-lG-iSm"/>
+                <constraint firstItem="Sys-nD-w1J" firstAttribute="leading" secondItem="7pa-lu-fcG" secondAttribute="leading" constant="20" id="nft-qV-Cx0"/>
+                <constraint firstItem="4rY-aL-Qy6" firstAttribute="top" secondItem="7pa-lu-fcG" secondAttribute="top" constant="20" id="sjF-xc-acN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-43.526785714285715"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Accent1">
+            <color red="0.0" green="0.40000000596046448" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

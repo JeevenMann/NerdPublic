@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PublicSans-Bold.ttf">
+            <string>PublicSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BasicIntroViewController" customModule="Nerd" customModuleProvider="target">
+            <connections>
+                <outlet property="flatImage" destination="NZH-kj-iw1" id="PbY-vr-l91"/>
+                <outlet property="largeText" destination="MZs-Qc-Lyy" id="npL-oY-LSu"/>
+                <outlet property="smallText" destination="wec-l4-5fg" id="uNG-Rk-glb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wec-l4-5fg">
+                    <rect key="frame" x="10" y="647" width="394" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Lth-ge-WfD"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="uKv-93-2dE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PublicSans-Bold" family="Public Sans" pointSize="30"/>
+                    <color key="textColor" name="Accent1"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NZH-kj-iw1">
+                    <rect key="frame" x="20" y="105" width="374" height="485"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="V9e-UI-dG8"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="oIa-rk-o6f"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZs-Qc-Lyy">
+                    <rect key="frame" x="10" y="712" width="394" height="100"/>
+                    <color key="backgroundColor" name="BackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="ZNg-1c-Ecb"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" name="TextColor"/>
+                    <fontDescription key="fontDescription" name="PublicSans-Bold" family="Public Sans" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="BackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MZs-Qc-Lyy" secondAttribute="bottom" constant="50" id="09I-p9-M1Z"/>
+                <constraint firstItem="wec-l4-5fg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="53Y-Aa-Sy6"/>
+                <constraint firstItem="NZH-kj-iw1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Mng-2N-Ovv"/>
+                <constraint firstItem="MZs-Qc-Lyy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="QHC-lf-A41"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wec-l4-5fg" secondAttribute="trailing" constant="10" id="X9d-ME-aOm"/>
+                <constraint firstItem="NZH-kj-iw1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="bVD-Mp-1gz"/>
+                <constraint firstItem="NZH-kj-iw1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="61" id="d7a-QD-RJy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MZs-Qc-Lyy" secondAttribute="trailing" constant="10" id="eaj-pD-WEV"/>
+                <constraint firstItem="wec-l4-5fg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gpR-tQ-qXp"/>
+                <constraint firstItem="MZs-Qc-Lyy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hsC-WO-YKJ"/>
+                <constraint firstItem="MZs-Qc-Lyy" firstAttribute="top" secondItem="wec-l4-5fg" secondAttribute="bottom" constant="30" id="rMB-pT-ZcJ"/>
+                <constraint firstItem="wec-l4-5fg" firstAttribute="top" secondItem="NZH-kj-iw1" secondAttribute="bottom" constant="57" id="xe4-jh-A9b"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="141.96428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Accent1">
+            <color red="0.0" green="0.40000000596046448" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

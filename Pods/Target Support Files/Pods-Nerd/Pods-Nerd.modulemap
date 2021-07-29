@@ -1,0 +1,6 @@
+framework module Pods_Nerd {
+  umbrella header "Pods-Nerd-umbrella.h"
+
+  export *
+  module * { export * }
+}

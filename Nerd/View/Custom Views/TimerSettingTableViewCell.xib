@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19115.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19107.4"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MaisonNeue-Book.otf">
+            <string>MaisonNeue-Book</string>
+        </array>
+        <array key="PublicSans-Regular.ttf">
+            <string>PublicSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="TimerSettingTableViewCell" customModule="Nerd" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Geh-Wb-u0V">
+                        <rect key="frame" x="200" y="17.5" width="193" height="35"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a73-56-Wus">
+                                <rect key="frame" x="0.0" y="0.0" width="94" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="MaisonNeue-Book" family="Maison Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
+                            </textField>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="59" minimumValue="1" maximumValue="59" translatesAutoresizingMaskIntoConstraints="NO" id="clg-Oa-RSK">
+                                <rect key="frame" x="99" y="0.0" width="94" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="GZr-U2-rvF"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="7rr-Cx-IGk"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus Length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vF6-BB-04X">
+                        <rect key="frame" x="10" y="25.5" width="180" height="19"/>
+                        <fontDescription key="fontDescription" name="PublicSans-Regular" family="Public Sans" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" name="Accent1"/>
+                <constraints>
+                    <constraint firstItem="Geh-Wb-u0V" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HDf-mm-kBz"/>
+                    <constraint firstItem="a73-56-Wus" firstAttribute="leading" secondItem="vF6-BB-04X" secondAttribute="trailing" constant="10" id="apG-aA-EtP"/>
+                    <constraint firstAttribute="trailing" secondItem="Geh-Wb-u0V" secondAttribute="trailing" constant="10" id="hJd-Gp-JRL"/>
+                    <constraint firstItem="vF6-BB-04X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ptf-NW-qX8"/>
+                    <constraint firstItem="vF6-BB-04X" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ruA-18-Tdv"/>
+                    <constraint firstItem="vF6-BB-04X" firstAttribute="height" secondItem="Geh-Wb-u0V" secondAttribute="height" multiplier="0.542857" id="tIe-wE-ex1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="incrementField" destination="a73-56-Wus" id="Cvg-Ld-8xu"/>
+                <outlet property="stepperButton" destination="clg-Oa-RSK" id="Jmo-Qm-dUS"/>
+                <outlet property="titleLabel" destination="vF6-BB-04X" id="1Zw-lb-r2X"/>
+            </connections>
+            <point key="canvasLocation" x="10.869565217391305" y="161.38392857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Accent1">
+            <color red="0.0" green="0.40000000596046448" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
