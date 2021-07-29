@@ -143,7 +143,6 @@
 		2AADA717259C0AA200A4D8B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AADA716259C0AA200A4D8B1 /* LoginViewController.swift */; };
 		2AB8E99725CDF632004E5E30 /* Date Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB8E99625CDF632004E5E30 /* Date Extension.swift */; };
 		2ABC00C42593E80300D31690 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC00C32593E80300D31690 /* ForumViewController.swift */; };
-		2AC7587B265F14AD003B40CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AC7587A265F14AD003B40CC /* GoogleService-Info.plist */; };
 		2ACDA71F26446B4B00C419B9 /* NativeAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ACDA71E26446B4B00C419B9 /* NativeAdCell.xib */; };
 		2ACDA72126446B8B00C419B9 /* NativeAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACDA72026446B8B00C419B9 /* NativeAdCell.swift */; };
 		2ADBD60925BF6AEF0007EC64 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBD60825BF6AEF0007EC64 /* Constants.swift */; };
@@ -297,7 +296,6 @@
 		2AADA716259C0AA200A4D8B1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2AB8E99625CDF632004E5E30 /* Date Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date Extension.swift"; sourceTree = "<group>"; };
 		2ABC00C32593E80300D31690 /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
-		2AC7587A265F14AD003B40CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2ACDA71E26446B4B00C419B9 /* NativeAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdCell.xib; sourceTree = "<group>"; };
 		2ACDA72026446B8B00C419B9 /* NativeAdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdCell.swift; sourceTree = "<group>"; };
 		2ADBD60825BF6AEF0007EC64 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -438,7 +436,6 @@
 		2A65A37C24734173008090EC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2AC7587A265F14AD003B40CC /* GoogleService-Info.plist */,
 				2A068F1125A33CC6005EBAB6 /* MenuVideo.mp4 */,
 				2A81795E25951AD10076EAC0 /* TabBarClasses */,
 				2AF8DCBE246F300600E42988 /* Assets.xcassets */,
@@ -777,7 +774,6 @@
 				2AADA6D1259BCF4F00A4D8B1 /* MaisonNeue-Demi.otf in Resources */,
 				2A3326B22692522600A8DA25 /* AirbnbCerealBook.ttf in Resources */,
 				2AADA6CC259BCF4F00A4D8B1 /* MaisonNeueExtended-DemiItalic.otf in Resources */,
-				2AC7587B265F14AD003B40CC /* GoogleService-Info.plist in Resources */,
 				2A64187526616CDA005FF878 /* AnswerCell.xib in Resources */,
 				2A068F1225A33CC6005EBAB6 /* MenuVideo.mp4 in Resources */,
 				2AADA6DB259BCF4F00A4D8B1 /* MaisonNeueExtended-ExtraBoldItalic.otf in Resources */,
